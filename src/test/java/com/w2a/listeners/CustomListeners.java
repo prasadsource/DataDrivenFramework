@@ -40,7 +40,6 @@ public class CustomListeners extends TestBase implements ITestListener,ISuiteLis
 	public void onTestStart(ITestResult result) {
 
 		ExtentTest test = extent.createTest(result.getTestClass().getName()+"     @TestCase : "+result.getMethod().getMethodName());
-        System.out.println("ExtentTest Object:"+test);
 		testReport.set(test);
         
 
